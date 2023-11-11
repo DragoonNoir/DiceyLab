@@ -17,9 +17,13 @@ public class SimulationTest {
    @Test
     public void testRunSimulation(){
         int numberOfDices = 2;
-        int numberOfTosses = 10;
+        int numberOfTosses = 1000 ;
         Simulation simulation = new Simulation(numberOfDices, numberOfTosses);
         simulation.runSimulation();
+
+        simulation.runSimulation();
+        simulation.printResults();
+
    }
 
 }
